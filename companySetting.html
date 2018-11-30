@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="layui/css/layui.css" media="all">
+		<style>
+			.header{
+				position: relative;
+				height: 50px;
+				line-height: 50px;
+				padding: 10px;
+				background-color: white ;
+				border-bottom: none;
+			}
+			.layui-input{
+				display: inline-block;
+				width: 20%;
+				line-height: 38px;
+				margin-left: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<input type="text" class="layui-input" placeholder="输入公司名查找" />
+				<button class="layui-btn" style="margin-left: 20px;"><i class="layui-icon">&#xe615;</i>搜索</button>
+				<button class="layui-btn" style="margin-left: 20px;" onclick="window.location.href='newCompany.html'"><i class="layui-icon">&#xe654;</i>新增公司</button>
+			</div>
+			<div class="body">
+				<table id="companyTable"></table>
+			</div>
+		</div>
+		<script src="layui/layui.js"></script>
+		<script>
+			layui.use(['element', 'table'], function() {
+				var element = layui.element;
+				var table = layui.table;
+
+				table.render({
+					elem: '#companyTable',
+					url: 'http://127.0.0.1:8080/companys',
+					cols: [
+						[{field: 'name',title: '公司名称',width: '20%'},
+						{field: 'description',title: '公司描述',width: '20%'},
+						{field: 'address',title: '公司地址',width: '20%'},
+						{field: 'createdate',title: '创建时间',width: '20%'},
+						{field: 'phone',title: '公司电话',width: '20%'}
+						]
+					],
+					page: true,
+					limit:20,
+					parseData:function(res){
+						console.log(res);
+						return {
+							"code": res.status,
+							"msg": res.msg,
+							"count": res.data.total,
+							"data": res.data.list
+						};
+					},
+					response: {
+						statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+					},
+					request:{
+						pageName:'pageNum',
+						limitName:'pageSize'
+					}
+				})
+			});
+		</script>
+	</body>
+</html>
