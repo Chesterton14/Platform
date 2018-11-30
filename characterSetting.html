@@ -27,8 +27,8 @@
 	<body>
 		<div class="container">
 			<div class="header">
-				<input type="text" class="layui-input" placeholder="输入角色名查找" />
-				<button class="layui-btn" style="margin-left: 20px;"><i class="layui-icon">&#xe615;</i>搜索</button>
+				<input type="text" class="layui-input" id="name" placeholder="输入角色名查找" />
+				<button class="layui-btn" id="btn" style="margin-left: 20px;"><i class="layui-icon">&#xe615;</i>搜索</button>
 				<button class="layui-btn" style="margin-left: 20px;" onclick="window.location.href='newCharacter.html'"><i class="layui-icon">&#xe654;</i>新增角色</button>
 			</div>
 			<div class="body">
@@ -146,6 +146,66 @@
 					} 
 				});
 			});
+
+			$("#btn")[0].addEventListener('click',function(){
+				var name=$("#name").val();
+				var _url='http://127.0.0.1:8080/role/searchByName?name='+name;
+				console.log(_url);
+				layui.use('table',function(){
+					var table = layui.table;
+					table.render({
+						elem: '#characterTable',
+						url: _url,
+						cols: [
+							[{
+									field: 'rolename',
+									title: '角色名',
+									width: '20%'
+								},
+								{
+									field: 'description',
+									title: '角色描述',
+									width: '20%'
+								},
+								{
+									field: 'id',
+									title: 'id',
+									width: '20%'
+								},
+								{
+									field: 'createdate',
+									title: '创建时间',
+									width: '20%'
+								},
+								{
+									title: '操作',
+									align: 'center',
+									toolbar: '#barDemo',
+									width: '20%'
+								}
+							]
+						],
+						page: true,
+						limit: 20,
+						parseData: function(res) {
+							console.log(JSON.stringify(res));
+							return {
+								"code": res.status,
+								"msg": res.msg,
+								"count": res.data.total,
+								"data": res.data.list
+							};
+						},
+						response: {
+							statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+						},
+						request: {
+							pageName: 'pageNum',
+							limitName: 'pageSize'
+						}
+					});
+				})
+			})
 		</script>
 	</body>
 </html>

@@ -27,13 +27,14 @@
 	<body>
 		<div class="container">
 			<div class="header">
-				<input type="text" class="layui-input" placeholder="输入权限名查找" />
-				<button class="layui-btn" style="margin-left: 20px;"><i class="layui-icon">&#xe615;</i>搜索</button>
+				<input type="text" class="layui-input" id="rulename" placeholder="输入权限名查找" />
+				<button class="layui-btn" id="btn" style="margin-left: 20px;"><i class="layui-icon">&#xe615;</i>搜索</button>
 			</div>
 			<div class="body">
 				<table id="rightTable"></table>
 			</div>
 		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="layui/layui.js"></script>
 		<script>
 			layui.use(['element', 'table'], function() {
@@ -53,7 +54,7 @@
 					page: true,
 					limit:20,
 					parseData:function(res){
-						console.log(res);
+						//console.log(res);
 						return {
 							"code": res.status,
 							"msg": res.msg,
@@ -70,6 +71,43 @@
 					}
 				})
 			});
+			$("#btn")[0].addEventListener('click',function(){
+				var rulename=$("#rulename").val();
+				var _url='http://127.0.0.1:8080/rule/searchByName?name='+rulename;
+				console.log(_url);
+				layui.use('table',function(){
+					var table = layui.table;
+					table.render({
+						elem: '#rightTable',
+						url: _url,
+						cols: [
+						[{field: 'rulename',title: '权限名',width: '25%'},
+						{field: 'description',title: '权限描述',width: '25%'},
+						{field: 'url',title: '对应URL',width: '25%'},
+						{field: 'createdate',title: '注册时间',width: '25%'}
+						]
+					],
+						page: true,
+						limit: 20,
+						parseData: function(res) {
+							//console.log(JSON.stringify(res));
+							return {
+								"code": res.status,
+								"msg": res.msg,
+								"count": res.data.total,
+								"data": res.data.list
+							};
+						},
+						response: {
+							statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+						},
+						request: {
+							pageName: 'pageNum',
+							limitName: 'pageSize'
+						}
+					});
+				})
+			})
 		</script>
 	</body>
 </html>

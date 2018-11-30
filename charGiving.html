@@ -35,20 +35,7 @@
 						</select>
 					</div>
 				</div>
-				<!-- <div class="layui-form-item">
-					<label class="layui-form-label"><i class="layui-icon">&#xe66f;</i> 角色名称</label>
-					<div class="layui-input-block">
-						<input type="text" name="rolename" required lay-verify="required" placeholder="请输入角色名称" autocomplete="off"
-						 class="layui-input">
-					</div>
-				</div>
-				<div class="layui-form-item">
-					<label class="layui-form-label"><i class="layui-icon">&#xe66f;</i> 角色id</label>
-					<div class="layui-input-block">
-						<input type="text" name="roleIds" required lay-verify="required" placeholder="请输入用户名称" autocomplete="off"
-						class="layui-input">
-					</div>
-				</div> -->
+
 				<div class="layui-form-item">
 					<div class="layui-input-block">
 						<button class="layui-btn" lay-submit lay-filter="formDemo"><i class="layui-icon">&#xe605;</i> 立即提交</button>
@@ -75,11 +62,11 @@
 			})
 			
 			setTimeout(function(){
-				$.get("http://localhost:8080/roles", function(res) {
+				$.get("http://127.0.0.1:8080/roles", function(res) {
 					var data = res.data.list;
 					//console.log(data);
 					for (var i = 0; i < data.length; i++) {
-						//console.log(data[i].id,data[i].name);
+						//console.log(data[i].id,data[i].rolename);
 						$("#roleIds").append("<option value='" + data[i].id + "'>" + data[i].rolename + "</option>");
 					}
 				})
@@ -89,7 +76,7 @@
 				var form = layui.form;
 				var layer = layui.layer;
 				form.on('submit(formDemo)', function(data) {
-					console.log(JSON.stringify(data.field));
+					//console.log(JSON.stringify(data.field));
 					$.post('http://localhost:8080/userRole',{
 						userId:data.field.userId,
 						roleIds:data.field.roleIds

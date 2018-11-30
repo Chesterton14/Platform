@@ -64,6 +64,7 @@
 								time: 1500
 							}, function() {
 								window.history.back(-1);
+								window.location.replace(document.referrer);
 							});
 						} else {
 							layer.msg(res.msg, {

@@ -52,7 +52,7 @@
 				<div class="layui-input-block">
 					<button class="layui-btn" lay-submit lay-filter="formDemo"><i class="layui-icon">&#xe605;</i> 立即提交</button>
 					<button type="reset" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe669;</i> 重置</button>
-					<button class="layui-btn layui-btn-primary" onclick="window.history.back(-1)"><i class="layui-icon">&#xe65c;</i> 返回上一页面</button>
+					<button class="layui-btn layui-btn-primary" onclick="javascript:window.history.back(-1);"><i class="layui-icon">&#xe65c;</i> 返回上一页面</button>
 				</div>
 			</div>
 		</form>
@@ -63,7 +63,7 @@
 			layui.use('form', function() {
 				var form = layui.form;
 				form.on('submit(formDemo)', function(data) {
-					console.log(JSON.stringify(data.field));
+					//console.log(JSON.stringify(data.field));
 					$.post('http://127.0.0.1:8080/company',{
 						name:data.field.name,
 						description:data.field.description,
@@ -76,6 +76,7 @@
 								time: 1500
 							}, function() {
 								window.history.back(-1);
+								window.location.replace(document.referrer);
 							});
 						} else {
 							layer.msg(res.msg, {

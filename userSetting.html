@@ -27,7 +27,7 @@
 	<body>
 		<div class="container">
 			<div class="header">
-				<input type="text" class="layui-input" id="id" placeholder="输入id查找" />
+				<input type="text" class="layui-input" id="username" placeholder="输入用户查找" />
 				<button class="layui-btn" id="btn" style="margin-left: 20px;"><i class="layui-icon">&#xe615;</i>搜索</button>
 				<button class="layui-btn" style="margin-left: 20px;" onclick="window.location.href='newUser.html'"><i class="layui-icon">&#xe654;</i>新增用户</button>
 			</div>
@@ -43,10 +43,11 @@
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="layui/layui.js"></script>
 		<script>
-			layui.use(['element', 'table', 'layer'], function() {
+			layui.use(['element', 'table', 'layer','form'], function() {
 				var element = layui.element;
 				var table = layui.table;
 				var layer = layui.layer;
+				var form = layui.form;
 
 				table.render({
 					elem: '#userTable',
@@ -116,7 +117,7 @@
 							content: 'charGiving.html' 
 						});
 					} else if (layEvent === 'del') { //删除
-						layer.confirm('真的删除行么', function(index) {
+						layer.confirm('确认删除用户：'+data.username+'?', {title:'提示'},function(index) {
 							obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
 							layer.close(index);
 							console.log(data);
@@ -148,8 +149,8 @@
 				});
 			});
 			$("#btn")[0].addEventListener('click',function(){
-				var id=$("#id").val();
-				var _url='http://127.0.0.1:8080/user/'+id;
+				var username=$("#username").val();
+				var _url='http://127.0.0.1:8080/user/searchByUserName?username='+username;
 				console.log(_url);
 				layui.use('table',function(){
 					var table = layui.table;
@@ -192,8 +193,8 @@
 							return {
 								"code": res.status,
 								"msg": res.msg,
-								"count": res,
-								"data": res.data
+								"count": res.data.total,
+								"data": res.data.list
 							};
 						},
 						response: {
