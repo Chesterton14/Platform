@@ -51,7 +51,7 @@
 
 				table.render({
 					elem: '#companyTable',
-					url: 'http://127.0.0.1:8080/companys',
+					url: 'http://localhost:7000/api/v1/user/companys',
 					cols: [
 						[{
 								field: 'name',
@@ -111,7 +111,7 @@
 							layer.close(index);
 							console.log(data);
 							$.ajax({
-								url: 'http://127.0.0.1:8080/company/' + data.id,
+								url: 'http://localhost:7000/api/v1/user/company/' + data.id,
 								type: 'POST',
 								data: {
 									_method: "DELETE",
@@ -141,7 +141,7 @@
 			});
 			$("#btn")[0].addEventListener('click',function(){
 				var name=$("#name").val();
-				var _url='http://127.0.0.1:8080/company/searchByName?name='+name;
+				var _url='http://localhost:7000/api/v1/user/company/searchByName?name='+name;
 				console.log(_url);
 				layui.use('table',function(){
 					var table = layui.table;
