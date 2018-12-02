@@ -1,0 +1,438 @@
+2018-12-02 13:05:37.827 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2d209079: startup date [Sun Dec 02 13:05:37 CST 2018]; root of context hierarchy
+2018-12-02 13:05:38.091 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-02 13:05:38.187 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$e18f7dbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-02 13:05:38.195 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7e5e895] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-02 13:05:39.904 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:05:41.564 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:05:41.566 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/config/user.yml'}]}
+2018-12-02 13:05:41.608 [main] INFO  com.beidou.user.UserApplication - No active profile set, falling back to default profiles: default
+2018-12-02 13:05:41.627 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6321e813: startup date [Sun Dec 02 13:05:41 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2d209079
+2018-12-02 13:05:43.287 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=69e4bef2-f5ec-3c39-a7b3-18274b156266
+2018-12-02 13:05:43.321 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-02 13:05:43.374 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b237a3c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-02 13:05:43.500 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebcbe598] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-02 13:05:43.702 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7e5e895] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-02 13:05:44.546 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2018-12-02 13:05:44.576 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-02 13:05:44.577 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-02 13:05:44.592 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\ARM\ADSv1_2\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\software\nodejs\;D:\software\MATLAB\R2016a\runtime\win64;D:\software\MATLAB\R2016a\bin;D:\software\MATLAB\R2016a\polyspace\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\software\Git\cmd;C:\Program Files\erl10.1\bin;C:\Users\320\AppData\Local\Microsoft\WindowsApps;C:\Users\320\AppData\Roaming\npm;C:\Users\320\AppData\Local\GitHubDesktop\bin;.]
+2018-12-02 13:05:44.732 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-02 13:05:44.734 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3107 ms
+2018-12-02 13:05:45.112 [localhost-startStop-1] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-12-02 13:05:45.113 [localhost-startStop-1] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-02 13:05:45.136 [localhost-startStop-1] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@21ef59ac
+2018-12-02 13:05:46.026 [localhost-startStop-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-02 13:05:47.796 [localhost-startStop-1] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2018-12-02 13:05:49.388 [localhost-startStop-1] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2018-12-02 13:05:50.312 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-02 13:05:50.314 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-12-02 13:05:50.317 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-02 13:05:50.319 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-02 13:05:50.320 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-02 13:05:50.323 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2018-12-02 13:05:50.325 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-02 13:05:50.326 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-02 13:05:50.328 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-02 13:05:51.403 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role],methods=[POST]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RoleController.insert(com.beidou.user.entity.Role)
+2018-12-02 13:05:51.406 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/roles],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RoleController.getAll(java.lang.Integer)
+2018-12-02 13:05:51.408 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/searchByName],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RoleController.searchByName(java.lang.Integer,java.lang.String)
+2018-12-02 13:05:51.409 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/{id}],methods=[PUT]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RoleController.updateById(com.beidou.user.entity.Role)
+2018-12-02 13:05:51.411 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/{ids}],methods=[DELETE]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RoleController.deleteById(java.lang.String)
+2018-12-02 13:05:51.412 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/{id}],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RoleController.getById(java.lang.Integer)
+2018-12-02 13:05:51.414 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userRole],methods=[POST]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserRoleController.insert(java.lang.Integer,java.lang.String)
+2018-12-02 13:05:51.415 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userRole],methods=[PUT]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserRoleController.updateByUserId(java.lang.Integer,java.lang.String)
+2018-12-02 13:05:51.417 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/roleRule],methods=[POST]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RoleRuleController.insert(java.lang.Integer,java.lang.String)
+2018-12-02 13:05:51.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/roleRule],methods=[PUT]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RoleRuleController.updateByRoleId(java.lang.Integer,java.lang.String)
+2018-12-02 13:05:51.421 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/company],methods=[POST]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.CompanyController.insert(com.beidou.user.entity.Company)
+2018-12-02 13:05:51.423 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/company],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.CompanyController.getAll()
+2018-12-02 13:05:51.425 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/company/searchByName],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.CompanyController.searchByName(java.lang.Integer,java.lang.String)
+2018-12-02 13:05:51.427 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/company/{id}],methods=[PUT]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.CompanyController.updateById(com.beidou.user.entity.Company)
+2018-12-02 13:05:51.428 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/companys],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.CompanyController.getList(java.lang.Integer)
+2018-12-02 13:05:51.429 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/company/{id}],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.CompanyController.getById(java.lang.Integer)
+2018-12-02 13:05:51.431 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/company/{ids}],methods=[DELETE]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.CompanyController.deleteByIds(java.lang.String)
+2018-12-02 13:05:51.433 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rule],methods=[POST]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RuleController.insert(com.beidou.user.entity.Rule)
+2018-12-02 13:05:51.435 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rule/searchByName],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RuleController.searchByName(java.lang.Integer,java.lang.String)
+2018-12-02 13:05:51.436 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rule/{id}],methods=[PUT]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RuleController.updateById(com.beidou.user.entity.Rule)
+2018-12-02 13:05:51.438 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rule/{ids}],methods=[DELETE]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RuleController.deleteById(java.lang.String)
+2018-12-02 13:05:51.440 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rules],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RuleController.getList(java.lang.Integer)
+2018-12-02 13:05:51.441 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rule/{id}],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RuleController.getById(java.lang.Integer)
+2018-12-02 13:05:51.443 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/roleRule],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.RuleController.getRoleRule(java.lang.Integer)
+2018-12-02 13:05:51.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept],methods=[POST]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.insert(com.beidou.user.entity.Dept)
+2018-12-02 13:05:51.452 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.getAll()
+2018-12-02 13:05:51.453 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/searchByNameAndComId],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.searchByNameAndComId(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-12-02 13:05:51.454 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/searchByName],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.searchByName(java.lang.Integer,java.lang.String)
+2018-12-02 13:05:51.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/{id}],methods=[PUT]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.updateById(com.beidou.user.entity.Dept)
+2018-12-02 13:05:51.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/{ids}],methods=[DELETE]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.deleteById(java.lang.String)
+2018-12-02 13:05:51.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/depts],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.getList(java.lang.Integer)
+2018-12-02 13:05:51.458 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/{id}],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.getById(java.lang.Integer)
+2018-12-02 13:05:51.459 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/comDept],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.getComDept(java.lang.Integer)
+2018-12-02 13:05:51.460 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/comDepts],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.DeptController.getComDeptList(java.lang.Integer,java.lang.Integer)
+2018-12-02 13:05:51.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[POST]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.insert(com.beidou.user.entity.User)
+2018-12-02 13:05:51.463 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/searchByUserNameAndComId],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.searchByUserNameAndComId(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-12-02 13:05:51.465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[PUT]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.updateById(com.beidou.user.entity.User)
+2018-12-02 13:05:51.466 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{ids}],methods=[DELETE]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.deleteById(java.lang.String)
+2018-12-02 13:05:51.466 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.getList(java.lang.Integer)
+2018-12-02 13:05:51.467 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.getById(java.lang.Integer)
+2018-12-02 13:05:51.468 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyPwd],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.modifyPwd(java.lang.Integer,java.lang.String,java.lang.String)
+2018-12-02 13:05:51.468 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.getComUserList(java.lang.Integer,java.lang.Integer)
+2018-12-02 13:05:51.469 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/searchByUserName],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.searchByUserName(java.lang.Integer,java.lang.String)
+2018-12-02 13:05:51.470 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/judgeUserName],methods=[GET]}" onto public com.beidou.user.utils.ResponseMsg com.beidou.user.controller.UserController.judgeUserName(java.lang.String)
+2018-12-02 13:05:51.471 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-02 13:05:51.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-12-02 13:05:51.475 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-12-02 13:05:51.476 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-12-02 13:05:51.478 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-02 13:05:51.479 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-02 13:05:51.582 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+2018-12-02 13:05:51.598 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/archaius],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.600 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/auditevents],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.603 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/beans],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.605 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.607 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/conditions],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.608 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/configprops],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.610 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/env],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.611 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/env/{toMatch}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.613 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/env],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v2+json || application/json],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.615 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/env],methods=[DELETE],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.617 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.618 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/loggers],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.620 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/loggers/{name}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.621 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/loggers/{name}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.623 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/heapdump],methods=[GET],produces=[application/octet-stream]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.624 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/threaddump],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.625 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/metrics/{requiredMetricName}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.627 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/metrics],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.629 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/scheduledtasks],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.630 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/httptrace],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.631 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/mappings],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.633 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/refresh],methods=[POST],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.634 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/features],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.635 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/service-registry],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.636 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/service-registry],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v2+json || application/json],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-02 13:05:51.638 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-02 13:05:51.804 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-02 13:05:51.908 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-12-02 13:05:51.909 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-02 13:05:52.029 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-02 13:05:52.493 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6321e813: startup date [Sun Dec 02 13:05:41 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2d209079
+2018-12-02 13:05:52.569 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-02 13:05:52.570 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-02 13:05:52.572 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/error/] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-02 13:05:52.574 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-02 13:05:52.580 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-12-02 13:05:52.645 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-12-02 13:05:53.485 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-02 13:05:53.488 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-02 13:05:53.497 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'connectionFactory' has been autodetected for JMX exposure
+2018-12-02 13:05:53.500 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-12-02 13:05:53.502 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-12-02 13:05:53.505 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-12-02 13:05:53.510 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-12-02 13:05:53.521 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'connectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=connectionFactory,type=CachingConnectionFactory]
+2018-12-02 13:05:53.535 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-12-02 13:05:53.549 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6321e813,type=ConfigurationPropertiesRebinder]
+2018-12-02 13:05:53.555 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-02 13:05:53.566 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-12-02 13:05:53.586 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2018-12-02 13:05:53.639 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2018-12-02 13:05:54.230 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2018-12-02 13:05:54.232 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2018-12-02 13:05:54.424 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2018-12-02 13:05:54.425 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2018-12-02 13:05:54.724 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:05:55.078 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-02 13:05:55.080 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-02 13:05:55.081 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-02 13:05:55.081 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-02 13:05:55.082 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-02 13:05:55.083 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-02 13:05:55.084 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-02 13:05:55.271 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2018-12-02 13:05:55.278 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 10
+2018-12-02 13:05:55.283 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-02 13:05:55.288 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1543727155287 with initial instances count: 5
+2018-12-02 13:05:55.296 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application USER with eureka with status UP
+2018-12-02 13:05:55.297 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1543727155297, current=UP, previous=STARTING]
+2018-12-02 13:05:55.299 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_USER/localhost:user:8081: registering service...
+2018-12-02 13:05:55.302 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-12-02 13:05:55.303 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-12-02 13:05:55.334 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-12-02 13:05:55.340 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_USER/localhost:user:8081 - registration status: 204
+2018-12-02 13:05:55.366 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-12-02 13:05:55.562 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_1
+2018-12-02 13:05:55.567 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getByIdUsingGET_1
+2018-12-02 13:05:55.583 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_1
+2018-12-02 13:05:55.590 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2018-12-02 13:05:55.595 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchByNameUsingGET_1
+2018-12-02 13:05:55.603 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_1
+2018-12-02 13:05:55.609 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_1
+2018-12-02 13:05:55.613 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_2
+2018-12-02 13:05:55.617 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getByIdUsingGET_2
+2018-12-02 13:05:55.623 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_2
+2018-12-02 13:05:55.631 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchByNameUsingGET_2
+2018-12-02 13:05:55.635 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_2
+2018-12-02 13:05:55.641 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_3
+2018-12-02 13:05:55.659 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_2
+2018-12-02 13:05:55.663 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getByIdUsingGET_3
+2018-12-02 13:05:55.675 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_2
+2018-12-02 13:05:55.686 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_4
+2018-12-02 13:05:55.691 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchByNameUsingGET_3
+2018-12-02 13:05:55.695 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_3
+2018-12-02 13:05:55.706 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_3
+2018-12-02 13:05:55.718 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getByIdUsingGET_4
+2018-12-02 13:05:55.726 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_3
+2018-12-02 13:05:55.732 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_5
+2018-12-02 13:05:55.752 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_4
+2018-12-02 13:05:55.757 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_6
+2018-12-02 13:05:55.824 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2018-12-02 13:05:55.826 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2018-12-02 13:05:55.831 [main] INFO  com.beidou.user.UserApplication - Started UserApplication in 20.173 seconds (JVM running for 20.896)
+2018-12-02 13:09:30.696 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-02 13:09:30.698 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-02 13:09:30.757 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+2018-12-02 13:09:30.849 [http-nio-8081-exec-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: 127.0.0.1:5672
+2018-12-02 13:09:30.988 [http-nio-8081-exec-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: connectionFactory#4490f4aa:0/SimpleConnection@4f9d3950 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 49833]
+2018-12-02 13:09:31.002 [http-nio-8081-exec-1] INFO  org.springframework.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (syslog) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-12-02 13:09:31.244 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:09:32.759 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:10:55.086 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:14:13.311 [http-nio-8081-exec-4] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取公司信息', url='/company', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getAll()', params='null', time=79, exception='无异常', result='获取公司信息成功', createdate='2018-12-02 13:14:13'}
+2018-12-02 13:14:48.082 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:14:49.606 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:15:55.090 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:16:06.784 [http-nio-8081-exec-3] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='192.168.47.1', operation='获取公司信息', url='/company', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getAll()', params='null', time=3, exception='无异常', result='获取公司信息成功', createdate='2018-12-02 13:16:06'}
+2018-12-02 13:16:34.715 [http-nio-8081-exec-7] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取公司信息', url='/company', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getAll()', params='null', time=2, exception='无异常', result='获取公司信息成功', createdate='2018-12-02 13:16:34'}
+2018-12-02 13:19:23.800 [http-nio-8081-exec-7] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=57, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:19:23'}
+2018-12-02 13:20:08.076 [http-nio-8081-exec-10] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:20:09.605 [http-nio-8081-exec-10] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:20:32.654 [http-nio-8081-exec-5] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=3, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:20:32'}
+2018-12-02 13:20:55.093 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:23:00.879 [http-nio-8081-exec-8] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=5, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:23:00'}
+2018-12-02 13:23:01.661 [http-nio-8081-exec-5] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取角色信息列表', url='/roles', requestmethod='GET', method='com.beidou.user.controller.RoleController.getAll()', params='1', time=27, exception='无异常', result='获取角色信息列表成功', createdate='2018-12-02 13:23:01'}
+2018-12-02 13:23:31.361 [http-nio-8081-exec-4] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='查找角色', url='/role/searchByName', requestmethod='GET', method='com.beidou.user.controller.RoleController.searchByName()', params='1"角色1"', time=27, exception='无异常', result='获取角色信息列表成功', createdate='2018-12-02 13:23:31'}
+2018-12-02 13:23:34.157 [http-nio-8081-exec-7] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='查找角色', url='/role/searchByName', requestmethod='GET', method='com.beidou.user.controller.RoleController.searchByName()', params='1""', time=5, exception='无异常', result='获取角色信息列表成功', createdate='2018-12-02 13:23:34'}
+2018-12-02 13:23:41.083 [http-nio-8081-exec-9] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='查找角色', url='/role/searchByName', requestmethod='GET', method='com.beidou.user.controller.RoleController.searchByName()', params='1"role1"', time=3, exception='无异常', result='获取角色信息列表成功', createdate='2018-12-02 13:23:41'}
+2018-12-02 13:24:14.797 [http-nio-8081-exec-1] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=3, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:24:14'}
+2018-12-02 13:24:15.335 [http-nio-8081-exec-8] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取公司信息列表', url='/companys', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getList()', params='1', time=5, exception='无异常', result='获取公司信息列表成功', createdate='2018-12-02 13:24:15'}
+2018-12-02 13:24:20.603 [http-nio-8081-exec-5] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='查找公司', url='/company/searchByName', requestmethod='GET', method='com.beidou.user.controller.CompanyController.searchByName()', params='1"公司1"', time=5, exception='无异常', result='查找公司成功', createdate='2018-12-02 13:24:20'}
+2018-12-02 13:24:33.388 [http-nio-8081-exec-2] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=3, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:24:33'}
+2018-12-02 13:24:34.063 [http-nio-8081-exec-4] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取部门信息列表', url='/depts', requestmethod='GET', method='com.beidou.user.controller.DeptController.getList()', params='1', time=10, exception='无异常', result='获取部门信息列表成功', createdate='2018-12-02 13:24:34'}
+2018-12-02 13:24:37.715 [http-nio-8081-exec-7] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='查找部门', url='/dept/searchByName', requestmethod='GET', method='com.beidou.user.controller.DeptController.searchByName()', params='1"部门1"', time=4, exception='无异常', result='查找部门成功', createdate='2018-12-02 13:24:37'}
+2018-12-02 13:24:57.107 [http-nio-8081-exec-6] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=2, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:24:57'}
+2018-12-02 13:25:04.683 [http-nio-8081-exec-10] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=2, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:25:04'}
+2018-12-02 13:25:05.281 [http-nio-8081-exec-1] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=6, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:25:05'}
+2018-12-02 13:25:28.080 [http-nio-8081-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:25:29.614 [http-nio-8081-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:25:55.096 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:30:48.085 [http-nio-8081-exec-10] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:30:49.618 [http-nio-8081-exec-10] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:30:55.098 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:35:55.102 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:36:08.077 [http-nio-8081-exec-4] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:36:09.604 [http-nio-8081-exec-4] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:40:55.104 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:41:08.079 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:41:09.663 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:45:55.107 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:46:28.081 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:46:29.623 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:50:05.466 [http-nio-8081-exec-10] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=3, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:50:05'}
+2018-12-02 13:50:05.956 [http-nio-8081-exec-1] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=3, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:50:05'}
+2018-12-02 13:50:07.165 [http-nio-8081-exec-8] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取公司信息列表', url='/companys', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getList()', params='1', time=3, exception='无异常', result='获取公司信息列表成功', createdate='2018-12-02 13:50:07'}
+2018-12-02 13:50:08.618 [http-nio-8081-exec-3] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='判断用户名重复', url='/user/judgeUserName', requestmethod='GET', method='com.beidou.user.controller.UserController.judgeUserName()', params='"admin"', time=6, exception='无异常', result='用户名可用', createdate='2018-12-02 13:50:08'}
+2018-12-02 13:50:23.010 [http-nio-8081-exec-2] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='判断用户名重复', url='/user/judgeUserName', requestmethod='GET', method='com.beidou.user.controller.UserController.judgeUserName()', params='"用户1"', time=2, exception='无异常', result='用户名已存在', createdate='2018-12-02 13:50:23'}
+2018-12-02 13:50:55.110 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:51:05.036 [http-nio-8081-exec-6] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取角色信息列表', url='/roles', requestmethod='GET', method='com.beidou.user.controller.RoleController.getAll()', params='1', time=4, exception='无异常', result='获取角色信息列表成功', createdate='2018-12-02 13:51:05'}
+2018-12-02 13:51:08.647 [http-nio-8081-exec-10] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取权限信息列表', url='/rules', requestmethod='GET', method='com.beidou.user.controller.RuleController.getList()', params='1', time=9, exception='无异常', result='获取权限信息列表成功', createdate='2018-12-02 13:51:08'}
+2018-12-02 13:51:09.094 [http-nio-8081-exec-1] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取公司信息列表', url='/companys', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getList()', params='1', time=2, exception='无异常', result='获取公司信息列表成功', createdate='2018-12-02 13:51:09'}
+2018-12-02 13:51:10.978 [http-nio-8081-exec-8] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取部门信息列表', url='/depts', requestmethod='GET', method='com.beidou.user.controller.DeptController.getList()', params='1', time=3, exception='无异常', result='获取部门信息列表成功', createdate='2018-12-02 13:51:10'}
+2018-12-02 13:51:14.818 [http-nio-8081-exec-5] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取公司信息列表', url='/companys', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getList()', params='1', time=3, exception='无异常', result='获取公司信息列表成功', createdate='2018-12-02 13:51:14'}
+2018-12-02 13:51:14.908 [http-nio-8081-exec-3] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取id对应的部门信息', url='/dept/13', requestmethod='GET', method='com.beidou.user.controller.DeptController.getById()', params='13', time=2, exception='无异常', result='获取部门信息成功', createdate='2018-12-02 13:51:14'}
+2018-12-02 13:51:23.097 [http-nio-8081-exec-2] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取用户信息列表', url='/users', requestmethod='GET', method='com.beidou.user.controller.UserController.getList()', params='1', time=4, exception='无异常', result='获取用户信息列表成功', createdate='2018-12-02 13:51:23'}
+2018-12-02 13:51:24.354 [http-nio-8081-exec-4] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取部门信息列表', url='/depts', requestmethod='GET', method='com.beidou.user.controller.DeptController.getList()', params='1', time=3, exception='无异常', result='获取部门信息列表成功', createdate='2018-12-02 13:51:24'}
+2018-12-02 13:51:25.473 [http-nio-8081-exec-7] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取公司信息列表', url='/companys', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getList()', params='1', time=3, exception='无异常', result='获取公司信息列表成功', createdate='2018-12-02 13:51:25'}
+2018-12-02 13:51:25.577 [http-nio-8081-exec-6] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取id对应的部门信息', url='/dept/14', requestmethod='GET', method='com.beidou.user.controller.DeptController.getById()', params='14', time=2, exception='无异常', result='获取部门信息成功', createdate='2018-12-02 13:51:25'}
+2018-12-02 13:51:29.530 [http-nio-8081-exec-10] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取公司信息列表', url='/companys', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getList()', params='1', time=2, exception='无异常', result='获取公司信息列表成功', createdate='2018-12-02 13:51:29'}
+2018-12-02 13:51:29.639 [http-nio-8081-exec-1] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='0:0:0:0:0:0:0:1', operation='获取id对应的部门信息', url='/dept/13', requestmethod='GET', method='com.beidou.user.controller.DeptController.getById()', params='13', time=1, exception='无异常', result='获取部门信息成功', createdate='2018-12-02 13:51:29'}
+2018-12-02 13:51:48.074 [http-nio-8081-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:51:49.584 [http-nio-8081-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 13:52:11.558 [http-nio-8081-exec-3] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='192.168.47.1', operation='获取部门信息列表', url='/depts', requestmethod='GET', method='com.beidou.user.controller.DeptController.getList()', params='1', time=3, exception='无异常', result='获取部门信息列表成功', createdate='2018-12-02 13:52:11'}
+2018-12-02 13:52:28.868 [http-nio-8081-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'comId' is not present]
+2018-12-02 13:52:43.661 [http-nio-8081-exec-7] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='192.168.47.1', operation='查找部门', url='/dept/searchByName', requestmethod='GET', method='com.beidou.user.controller.DeptController.searchByName()', params='1"部门1"', time=2, exception='无异常', result='查找部门成功', createdate='2018-12-02 13:52:43'}
+2018-12-02 13:52:53.008 [http-nio-8081-exec-9] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='192.168.47.1', operation='获取部门信息', url='/dept', requestmethod='GET', method='com.beidou.user.controller.DeptController.getAll()', params='1"部门1"', time=1, exception='无异常', result='获取部门信息成功', createdate='2018-12-02 13:52:53'}
+2018-12-02 13:53:04.995 [http-nio-8081-exec-10] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='192.168.47.1', operation='获取公司部门', url='/comDept', requestmethod='GET', method='com.beidou.user.controller.DeptController.getComDept()', params='137', time=3, exception='无异常', result='获取公司部门成功', createdate='2018-12-02 13:53:04'}
+2018-12-02 13:53:09.488 [http-nio-8081-exec-8] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='192.168.47.1', operation='获取公司部门', url='/comDept', requestmethod='GET', method='com.beidou.user.controller.DeptController.getComDept()', params='136', time=1, exception='无异常', result='获取公司部门成功', createdate='2018-12-02 13:53:09'}
+2018-12-02 13:53:18.040 [http-nio-8081-exec-5] INFO  com.beidou.common.aop.SysLoggerAspect - 操作信息=SysLog{id=0, username='root', ip='192.168.47.1', operation='获取公司信息列表', url='/companys', requestmethod='GET', method='com.beidou.user.controller.CompanyController.getList()', params='1', time=2, exception='无异常', result='获取公司信息列表成功', createdate='2018-12-02 13:53:18'}
+2018-12-02 13:55:55.112 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 13:56:48.078 [http-nio-8081-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 13:56:49.582 [http-nio-8081-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:00:55.115 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:02:08.087 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:02:09.593 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:05:55.118 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:07:28.075 [http-nio-8081-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:07:29.584 [http-nio-8081-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:10:55.122 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:12:28.076 [http-nio-8081-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:12:29.592 [http-nio-8081-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:15:55.125 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:17:28.078 [http-nio-8081-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:17:29.623 [http-nio-8081-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:20:55.126 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:22:48.082 [http-nio-8081-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:22:49.601 [http-nio-8081-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:25:55.129 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:28:08.084 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:28:09.603 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:30:55.133 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:33:08.091 [http-nio-8081-exec-3] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:33:09.619 [http-nio-8081-exec-3] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:35:55.136 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:38:28.084 [http-nio-8081-exec-10] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:38:29.603 [http-nio-8081-exec-10] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:40:55.138 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:43:28.081 [http-nio-8081-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:43:29.614 [http-nio-8081-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:45:55.142 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:48:48.085 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:48:49.603 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:50:55.144 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:54:08.085 [http-nio-8081-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:54:09.613 [http-nio-8081-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 14:55:55.146 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 14:59:28.083 [http-nio-8081-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 14:59:29.593 [http-nio-8081-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 15:00:55.149 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 15:04:48.084 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 15:04:49.603 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 15:05:55.151 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 15:10:08.084 [http-nio-8081-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 15:10:09.606 [http-nio-8081-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 15:10:55.153 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 15:15:28.089 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 15:15:29.596 [http-nio-8081-exec-1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 15:15:55.155 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 15:20:48.086 [http-nio-8081-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 15:20:49.600 [http-nio-8081-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 15:20:55.158 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 15:25:55.161 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 15:26:08.083 [http-nio-8081-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 15:26:09.593 [http-nio-8081-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 15:30:55.163 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-02 15:31:28.081 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5000
+2018-12-02 15:31:29.588 [http-nio-8081-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=user, profiles=[default], label=null, version=null, state=null
+2018-12-02 15:31:51.673 [DiscoveryClient-HeartbeatExecutor-0] ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient - Request execution error
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+2018-12-02 15:31:51.681 [DiscoveryClient-HeartbeatExecutor-0] WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2018-12-02 15:31:53.697 [DiscoveryClient-HeartbeatExecutor-0] ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient - Request execution error
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 common frames omitted
+2018-12-02 15:31:53.704 [DiscoveryClient-HeartbeatExecutor-0] WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2018-12-02 15:31:53.706 [DiscoveryClient-HeartbeatExecutor-0] ERROR com.netflix.discovery.DiscoveryClient - DiscoveryClient_USER/localhost:user:8081 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
