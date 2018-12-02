@@ -53,15 +53,11 @@ layui.use(['element','layer'], function() {
 
 	});
 
-
 	element.on('tabDelete(demo)', function(data) {
 		//console.log(data.elem);
 		var thisHref = this.parentNode.getAttribute("lay-id");
 		hrefArr.remove(thisHref);
 	});
-	
-
-	
 
 });
 

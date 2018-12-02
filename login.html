@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="img/newlogo.png" type="image/x-icon" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>智能车辆监控管理平台</title>
+		<link rel="stylesheet" href="layui/css/layui.css" media="all" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background:#393D49;
+			}
+			.container{
+				width: 350px;
+				height: 300px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -175px;
+				margin-top: -190px;
+				
+			}
+			.title{
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				color: white;
+				font-size: 30px;
+				font-weight: 800;
+				padding-bottom: 30px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">智能车辆监控管理平台</div>
+			<div class="layui-form layui-form-pane" lay-filter="form" style="padding: 0 10px;">
+				<div class="layui-form-item" style="margin-bottom: 20px;">
+					<label class="layui-form-label"><i class="layui-icon">&#xe66f;</i> 账号</label>
+					<div class="layui-input-block">
+						<input type="text" name="username" id="username"  required lay-verify="required" class="layui-input">
+					</div>
+				</div>
+
+				<div class="layui-form-item" style="margin-bottom: 20px;">
+					<label class="layui-form-label"><i class="layui-icon">&#xe673;</i> 密码</label>
+					<div class="layui-input-block">
+						<input type="password" name="pwd" id="password" required lay-verify="required" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item" >
+					<div class="layui-input-block" style="width: 100%;margin: 0;">
+						<button class="layui-btn" style="width: 100%;" lay-submit lay-filter="formDemo">立即提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="layui/layui.js"></script>
+		<script>
+			layui.use('form', function() {
+				var form = layui.form;
+				form.on('submit(formDemo)', function(data) {
+					console.log(data.field);
+					layer.msg('登录成功', {
+						icon: 6,
+						time: 1500
+					});
+					window.location.href="index.html"
+					return false;
+				});
+			});
+		</script>
+	</body>
+</html>
