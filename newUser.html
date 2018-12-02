@@ -110,8 +110,7 @@
 					<div class="layui-input-block">
 						<button class="layui-btn" lay-submit lay-filter="formDemo"><i class="layui-icon">&#xe605;</i> 立即提交</button>
 						<button type="reset" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe669;</i> 重置</button>
-						<button class="layui-btn layui-btn-primary" onclick="window.history.back(-1)"><i class="layui-icon">&#xe65c;</i>
-							返回上一页面</button>
+						<button class="layui-btn layui-btn-primary" onclick="window.history.back(-1)"><i class="layui-icon">&#xe65c;</i> 返回上一页面</button>
 					</div>
 				</div>
 			</div>
@@ -173,6 +172,7 @@
 								time: 1500
 							}, function() {
 								window.history.back(-1);
+								window.location.replace(document.referrer);
 							});
 						} else {
 							layer.msg(data.msg, {
@@ -187,23 +187,20 @@
 			});
 		</script>
 		<script>
-			/* function checkUser() {
+			function checkUser() {
 				var username = document.getElementById('username');
 				var userTip = document.getElementById('userTip');
-				$.get("http://127.0.0.1:8080/users",{
-					pageNum: 1
-				},function(data){
-					console.log(data);
+				$.get("http://127.0.0.1:8080/user/judgeUserName?username=" + username.value, function(data) {
+					//console.log(data);
+					userTip.innerText = data.msg;
+					if (data.msg == '用户名可用') {
+						userTip.innerHTML = '<i class="layui-icon" style="color:green !important">&#xe605; 用户名可用</i>'
+					}
+					if (data.msg == '用户名已存在') {
+						userTip.innerHTML = '<i class="layui-icon" style="color:red !important">&#x1006; 用户名已存在</i>'
+					}
 				})
-				if (username.value == '') {
-					userTip.innerText = "请输入用户名";
-				} else if (username.value.indexOf(username) == -1) {
-					userTip.innerHTML = '<i class="layui-icon" style="color:green !important">&#xe605;</i>'
-				} else {
-					userTip.innerHTML = '<i class="layui-icon" style="color:red !important">&#x1006;</i>'
-				}
-				//console.log(userName.value);
-			} */
+			}
 
 			function checkPwd() {
 				var passwordF = document.getElementById("passwordF");
