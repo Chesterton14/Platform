@@ -64,8 +64,8 @@
 								width: '20%'
 							},
 							{
-								field: 'status',
-								title: '状态',
+								field: 'email',
+								title: '电子邮件',
 								width: '20%'
 							},
 							{
@@ -120,13 +120,13 @@
 						layer.confirm('确认删除用户：'+data.username+'?', {title:'提示'},function(index) {
 							obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
 							layer.close(index);
-							console.log(data);
+							//console.log(data);
 							$.ajax({
 								url: 'http://localhost:7000/api/v1/user/user/'+data.id,
 								type: 'POST',
 								data:{_method:"DELETE",ids:data.id},
 								success:function(res){
-									console.log(res);
+									//console.log(res);
 								},
 								error:function(res){
 									console.log(res);
@@ -151,7 +151,7 @@
 			$("#btn")[0].addEventListener('click',function(){
 				var username=$("#username").val();
 				var _url='http://localhost:7000/api/v1/user/user/searchByUserName?username='+username;
-				console.log(_url);
+				//console.log(_url);
 				layui.use('table',function(){
 					var table = layui.table;
 					table.render({
@@ -189,7 +189,7 @@
 						page: true,
 						limit: 20,
 						parseData: function(res) {
-							console.log(JSON.stringify(res));
+							//console.log(JSON.stringify(res));
 							return {
 								"code": res.status,
 								"msg": res.msg,

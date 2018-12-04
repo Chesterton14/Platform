@@ -47,8 +47,8 @@
 					cols: [
 						[{field: 'rulename',title: '权限名',width: '25%'},
 						{field: 'description',title: '权限描述',width: '25%'},
-						{field: 'url',title: '对应URL',width: '25%'},
-						{field: 'createdate',title: '注册时间',width: '25%'}
+						{field: 'createdate',title: '创建时间',width: '25%'},
+						{field: 'modifydate',title: '修改时间',width: '25%'}
 						]
 					],
 					page: true,
@@ -74,7 +74,7 @@
 			$("#btn")[0].addEventListener('click',function(){
 				var rulename=$("#rulename").val();
 				var _url='http://localhost:7000/api/v1/user/rule/searchByName?name='+rulename;
-				console.log(_url);
+				//console.log(_url);
 				layui.use('table',function(){
 					var table = layui.table;
 					table.render({

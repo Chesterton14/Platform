@@ -140,7 +140,7 @@
 			$("#btn")[0].addEventListener('click',function(){
 				var name=$("#name").val();
 				var _url='http://localhost:7000/api/v1/user/dept/searchByName?name='+name;
-				console.log(_url);
+				//console.log(_url);
 				layui.use('table',function(){
 					var table = layui.table;
 					table.render({
@@ -178,7 +178,7 @@
 						page: true,
 						limit: 20,
 						parseData: function(res) {
-							console.log(res);
+							//console.log(res);
 							return {
 								"code": res.status,
 								"msg": res.msg,

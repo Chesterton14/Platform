@@ -29,7 +29,8 @@
 			<div class="header">
 				<input type="text" class="layui-input" id="name" placeholder="输入角色名查找" />
 				<button class="layui-btn" id="btn" style="margin-left: 20px;"><i class="layui-icon">&#xe615;</i>搜索</button>
-				<button class="layui-btn" style="margin-left: 20px;" onclick="window.location.href='./new/newCharacter.html'"><i class="layui-icon">&#xe654;</i>新增角色</button>
+				<button class="layui-btn" style="margin-left: 20px;" onclick="window.location.href='./new/newCharacter.html'"><i
+					 class="layui-icon">&#xe654;</i>新增角色</button>
 			</div>
 			<div class="body">
 				<table id="characterTable" lay-filter="demo"></table>
@@ -62,13 +63,13 @@
 								width: '20%'
 							},
 							{
-								field: 'id',
-								title: 'id',
+								field: 'createdate',
+								title: '创建时间',
 								width: '20%'
 							},
 							{
-								field: 'createdate',
-								title: '创建时间',
+								field: 'modifydate',
+								title: '修改时间',
 								width: '20%'
 							},
 							{
@@ -116,7 +117,7 @@
 									ids: data.id
 								},
 								success: function(res) {
-									console.log(res);
+									//console.log(res);
 								},
 								error: function(res) {
 									console.log(res);
@@ -124,16 +125,17 @@
 							})
 							//向服务端发送删除指令
 						});
-					}else if(layEvent === 'edit'){
-						console.log(data);
+					} else if (layEvent === 'edit') {
+						//console.log(data);
+						sessionStorage.setItem("roleId", data.id)
 						layer.open({
 							type: 2,
 							shade: 0.2,
 							title: ['当前用户：' + data.rolename],
 							area: ['50%', '90%'],
-							content: './edit/editChar.html' 
+							content: './edit/editChar.html'
 						});
-					}else if(layEvent ==='detail'){
+					} else if (layEvent === 'detail') {
 						//console.log(data);
 						sessionStorage.setItem('rid', data.id);
 						layer.open({
@@ -141,17 +143,17 @@
 							shade: 0.2,
 							title: ['当前用户：' + data.rolename],
 							area: ['500px', '300px'],
-							content: './give/rightGiving.html' 
+							content: './give/rightGiving.html'
 						});
-					} 
+					}
 				});
 			});
 
-			$("#btn")[0].addEventListener('click',function(){
-				var name=$("#name").val();
-				var _url='http://localhost:7000/api/v1/user/role/searchByName?name='+name;
-				console.log(_url);
-				layui.use('table',function(){
+			$("#btn")[0].addEventListener('click', function() {
+				var name = $("#name").val();
+				var _url = 'http://localhost:7000/api/v1/user/role/searchByName?name=' + name;
+				//console.log(_url);
+				layui.use('table', function() {
 					var table = layui.table;
 					table.render({
 						elem: '#characterTable',
@@ -188,7 +190,7 @@
 						page: true,
 						limit: 20,
 						parseData: function(res) {
-							console.log(JSON.stringify(res));
+							//console.log(JSON.stringify(res));
 							return {
 								"code": res.status,
 								"msg": res.msg,

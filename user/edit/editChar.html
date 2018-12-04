@@ -19,12 +19,7 @@
 	<body>
 		<div class="formContainer">
 		<form class="layui-form layui-form-pane">
-		    <div class="layui-form-item">
-		    	<label class="layui-form-label"><i class="layui-icon">&#xe66f;</i> 角色id</label>
-		    	<div class="layui-input-block">
-		    		<input type="text" name="id" id="id" required lay-verify="required" placeholder="请输入用户id" autocomplete="off" class="layui-input">
-		    	</div>
-		    </div>
+		    
 			<div class="layui-form-item">
 				<label class="layui-form-label"><i class="layui-icon">&#xe66f;</i> 角色名称</label>
 				<div class="layui-input-block">
@@ -41,6 +36,12 @@
 				<div class="layui-input-block">
 					<button class="layui-btn" lay-submit lay-filter="formDemo"><i class="layui-icon">&#xe605;</i> 立即提交</button>
 					<button type="reset" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe669;</i> 重置</button>
+				</div>
+			</div>
+			<div class="layui-form-item" style="visibility: hidden;">
+				<label class="layui-form-label"><i class="layui-icon">&#xe66f;</i> 角色id</label>
+				<div class="layui-input-block">
+					<input type="text" name="id" id="id" required lay-verify="required" placeholder="请输入用户id" autocomplete="off" class="layui-input">
 				</div>
 			</div>
 		</form>
@@ -87,7 +88,7 @@
 				var curId = sessionStorage.getItem('roleId');
 				console.log(curId);
 				$.get('http://localhost:7000/api/v1/user/role/'+curId,function(res){
-					//console.log(res);
+					console.log(res);
 					$('#id').val(res.data[0].id);
 					$('#rolename').val(res.data[0].rolename);
 					$('#description').val(res.data[0].description);

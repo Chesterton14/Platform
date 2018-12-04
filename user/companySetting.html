@@ -109,7 +109,7 @@
 						layer.confirm('真的删除行么', function(index) {
 							obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
 							layer.close(index);
-							console.log(data);
+							//console.log(data);
 							$.ajax({
 								url: 'http://localhost:7000/api/v1/user/company/' + data.id,
 								type: 'POST',
@@ -118,7 +118,7 @@
 									ids: data.id
 								},
 								success: function(res) {
-									console.log(res);
+									//console.log(res);
 								},
 								error: function(res) {
 									console.log(res);
@@ -142,7 +142,7 @@
 			$("#btn")[0].addEventListener('click',function(){
 				var name=$("#name").val();
 				var _url='http://localhost:7000/api/v1/user/company/searchByName?name='+name;
-				console.log(_url);
+				//console.log(_url);
 				layui.use('table',function(){
 					var table = layui.table;
 					table.render({
@@ -180,7 +180,7 @@
 						page: true,
 						limit: 20,
 						parseData: function(res) {
-							console.log(res);
+							//console.log(res);
 							return {
 								"code": res.status,
 								"msg": res.msg,

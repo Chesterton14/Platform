@@ -31,11 +31,18 @@
 				line-height: 50px;
 				text-align: center;
 				color: white;
-				font-size: 30px;
-				font-weight: 800;
-				padding-bottom: 30px;
+				font-size: 33px;
+				font-weight: 600;
+				padding-bottom: 35px;
 			}
-			
+			.footer{
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				color: #777777;
+				font-size: 12px;
+				margin-top: -5px;
+			}
 		</style>
 	</head>
 	<body>
@@ -43,24 +50,25 @@
 			<div class="title">智能车辆监控管理平台</div>
 			<div class="layui-form layui-form-pane" lay-filter="form" style="padding: 0 10px;">
 				<div class="layui-form-item" style="margin-bottom: 20px;">
-					<label class="layui-form-label"><i class="layui-icon">&#xe66f;</i> 账号</label>
+					<label class="layui-form-label" ><i class="layui-icon">&#xe66f;</i> 账号</label>
 					<div class="layui-input-block">
 						<input type="text" name="username" id="username"  required lay-verify="required" class="layui-input">
 					</div>
 				</div>
 
 				<div class="layui-form-item" style="margin-bottom: 20px;">
-					<label class="layui-form-label"><i class="layui-icon">&#xe673;</i> 密码</label>
+					<label class="layui-form-label" ><i class="layui-icon">&#xe673;</i> 密码</label>
 					<div class="layui-input-block">
 						<input type="password" name="pwd" id="password" required lay-verify="required" class="layui-input">
 					</div>
 				</div>
 				<div class="layui-form-item" >
 					<div class="layui-input-block" style="width: 100%;margin: 0;">
-						<button class="layui-btn" style="width: 100%;" lay-submit lay-filter="formDemo">立即提交</button>
+						<button class="layui-btn" style="width: 100%;font-size: 18px;letter-spacing: 1px;" lay-submit lay-filter="formDemo">登录</button>
 					</div>
 				</div>
 			</div>
+			<div class="footer">© 2018 智能车辆监控管理平台 - All Rights Reserved</div>
 		</div>
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="layui/layui.js"></script>
