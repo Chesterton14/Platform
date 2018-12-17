@@ -8,46 +8,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>智能车辆监控管理平台</title>
 		<link rel="stylesheet" href="layui/css/layui.css" media="all" />
-		<style>
-			*{
-				margin: 0;
-				padding: 0;
-			}
-			body{
-				background:#393D49;
-			}
-			.container{
-				width: 350px;
-				height: 300px;
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				margin-left: -175px;
-				margin-top: -190px;
-				
-			}
-			.title{
-				height: 50px;
-				line-height: 50px;
-				text-align: center;
-				color: white;
-				font-size: 33px;
-				font-weight: 600;
-				padding-bottom: 35px;
-			}
-			.footer{
-				height: 30px;
-				line-height: 30px;
-				text-align: center;
-				color: #777777;
-				font-size: 12px;
-				margin-top: -5px;
-			}
-		</style>
+		<link rel="stylesheet" href="css/login.css">
 	</head>
 	<body>
+		<div class="title">智能车辆监控管理平台</div>
 		<div class="container">
-			<div class="title">智能车辆监控管理平台</div>
+
 			<div class="layui-form layui-form-pane" lay-filter="form" style="padding: 0 10px;">
 				<div class="layui-form-item" style="margin-bottom: 20px;">
 					<label class="layui-form-label" ><i class="layui-icon">&#xe66f;</i> 账号</label>
@@ -59,7 +25,14 @@
 				<div class="layui-form-item" style="margin-bottom: 20px;">
 					<label class="layui-form-label" ><i class="layui-icon">&#xe673;</i> 密码</label>
 					<div class="layui-input-block">
-						<input type="password" name="pwd" id="password" required lay-verify="required" class="layui-input">
+						<input type="password" name="pwd" id="pwd" required lay-verify="required" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item" style="margin-bottom: 20px;">
+					<label class="layui-form-label" ><i class="layui-icon">&#xe673;</i> 验证码</label>
+					<div class="layui-input-block">
+						<input type="text" name="code" id="code" required lay-verify="required" class="layui-input">
+						<span class="code"><img src="http://localhost:7000/gifCode" alt="" style="height:38px"></span>
 					</div>
 				</div>
 				<div class="layui-form-item" >
@@ -68,20 +41,51 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer">© 2018 智能车辆监控管理平台 - All Rights Reserved</div>
 		</div>
+		<footer >
+			<div class="footer">© 2018 智能车辆监控管理平台 - All Rights Reserved</div>
+		</footer>
+
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="layui/layui.js"></script>
 		<script>
+			//sessionStorage.clear();
 			layui.use('form', function() {
 				var form = layui.form;
 				form.on('submit(formDemo)', function(data) {
-					console.log(data.field);
-					layer.msg('登录成功', {
-						icon: 6,
-						time: 1500
+					//console.log(data.field);
+					$.post("http://localhost:7000/login",{
+						username: data.field.username,
+						pwd: data.field.pwd,
+						code: data.field.code
+					},function (data) {
+						console.log(data);
+						var username = data.data.username;
+						var Pmenus = data.menu.children;
+						var PmenusName = [];
+						var childes = [];
+						var childesText = [];
+						var childesUrl = [];
+						for (var i = 0; i < Pmenus.length; i++) {
+							PmenusName.push(Pmenus[i].text);
+                            childes.push(Pmenus[i].children);
+						}
+						//console.log(childes);
+                        for (var j = 0; j < childes.length; j++) {
+                            for (var m = 0; m < childes[j].length; m++) {
+                                childesText.push(childes[j][m].text);
+                                childesUrl.push(childes[j][m].url);
+                            }
+                        }
+                        //console.log(childesText);
+                        //console.log(childesUrl);
+                        sessionStorage.setItem("username",username);
+                        sessionStorage.setItem('PmenusName',PmenusName);
+                        sessionStorage.setItem('childesText',childesText);
+                        sessionStorage.setItem('childesUrl',childesUrl);
+						window.location.href="index.html";
 					});
-					window.location.href="index.html"
+
 					return false;
 				});
 			});
