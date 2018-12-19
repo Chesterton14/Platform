@@ -22,15 +22,18 @@
 				<table id="mainTable"></table>
 			</div>
 		</div>
+        <script src="js/jquery-3.3.1.min.js"></script>
 		<script src="layui/layui.js"></script>
 		<script>
+
+
 			layui.use(['element', 'table'], function() {
 				var element = layui.element;
 				var table = layui.table;
 
 				table.render({
 					elem: '#mainTable',
-					url: 'http://localhost:7000/api/v1/users',
+					url: 'http://localhost:7000/api/v1/user/users',
 					cols: [[
 						{field: 'username',title: '用户名',width: '20%'},
 						{field: 'name',title: '员工姓名',width: '20%'},

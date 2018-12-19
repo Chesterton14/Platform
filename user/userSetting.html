@@ -43,6 +43,18 @@
 		<script src="../js/jquery-3.3.1.min.js"></script>
 		<script src="../layui/layui.js"></script>
 		<script>
+			var username = sessionStorage.getItem("username");
+			var pwd = sessionStorage.getItem("pwd");
+			console.log(username,pwd);
+			$.post("http://localhost:7000/login",{
+				username: username,
+				pwd: pwd,
+				code: "123"
+			},function (res) {
+				console.log(res);
+				
+			});
+			
 			layui.use(['element', 'table', 'layer','form'], function() {
 				var element = layui.element;
 				var table = layui.table;
@@ -51,34 +63,13 @@
 
 				table.render({
 					elem: '#userTable',
-					url: 'http://localhost:7000/api/v1/users',
+					url: 'http://localhost:7000/api/v1/user/users',
 					cols: [
-						[{
-								field: 'username',
-								title: '用户名',
-								width: '20%'
-							},
-							{
-								field: 'id',
-								title: 'id',
-								width: '20%'
-							},
-							{
-								field: 'email',
-								title: '电子邮件',
-								width: '20%'
-							},
-							{
-								field: 'createdate',
-								title: '注册时间',
-								width: '20%'
-							},
-							{
-								title: '操作',
-								align: 'center',
-								toolbar: '#barDemo',
-								width: '20%'
-							}
+						[{field: 'username',title: '用户名',width: '20%'},
+							{field: 'id',title: 'id',width: '20%'},
+							{field: 'email',title: '电子邮件',width: '20%'},
+							{field: 'createdate',title: '注册时间',width: '20%'},
+							{title: '操作',align: 'center',toolbar: '#barDemo',width: '20%'}
 						]
 					],
 					page: true,
@@ -158,32 +149,11 @@
 						elem: '#userTable',
 						url: _url,
 						cols: [
-							[{
-									field: 'username',
-									title: '用户名',
-									width: '20%'
-								},
-								{
-									field: 'id',
-									title: 'id',
-									width: '20%'
-								},
-								{
-									field: 'status',
-									title: '状态',
-									width: '20%'
-								},
-								{
-									field: 'createdate',
-									title: '注册时间',
-									width: '20%'
-								},
-								{
-									title: '操作',
-									align: 'center',
-									toolbar: '#barDemo',
-									width: '20%'
-								}
+							[{field: 'username',title: '用户名',width: '20%'},
+								{field: 'id',title: 'id',width: '20%'},
+								{field: 'status',title: '状态',width: '20%'},
+								{field: 'createdate',title: '注册时间',width: '20%'},
+								{title: '操作',align: 'center',toolbar: '#barDemo',width: '20%'}
 							]
 						],
 						page: true,
