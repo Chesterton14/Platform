@@ -31,7 +31,7 @@
 				<div class="layui-form-item" style="margin-bottom: 20px;">
 					<label class="layui-form-label" ><i class="layui-icon">&#xe673;</i> 验证码</label>
 					<div class="layui-input-block">
-						<input type="text" name="code" id="code" value="345" required lay-verify="required" class="layui-input">
+						<input type="text" name="code" id="code"  required lay-verify="required" class="layui-input">
 						<span class="code"><img src="http://localhost:7000/gifCode" alt="" style="height:38px"></span>
 					</div>
 				</div>
@@ -54,19 +54,35 @@
 				var form = layui.form;
 				form.on('submit(formDemo)', function(data) {
 					//console.log(data.field);
-					var pwd2 = data.field.pwd;
-					$.post("http://localhost:7000/login",{
-						username: data.field.username,
-						pwd: data.field.pwd,
-						code: data.field.code
-					},function (res) {
-						console.log(res);
-						var menus = res.menu.children;
-						var name=res.data.name;
-                        //console.log(menus);
-						sessionStorage.setItem("menus",JSON.stringify(menus));
-						sessionStorage.setItem('name',name);
-						window.location.href="index.html";//跳转
+					$.ajax({
+						type: 'POST',
+						url: "http://localhost:7000/login",
+						data:{
+                            username: data.field.username,
+                            pwd: data.field.pwd,
+                            code: data.field.code
+						},
+						success:function (res) {
+                            console.log(res);
+                            if (res.msg != "登录成功！"){
+                                layer.msg(res.msg, {
+                                    icon: 5,
+                                    time: 1500
+                                });
+                                return false
+                            }
+                            layer.msg(res.msg, {
+                                icon: 6,
+                                time: 1500
+                            }, function() {
+                                var menus = res.menu.children;
+                                var name=res.data.name;
+                                //console.log(menus);
+                                sessionStorage.setItem("menus",JSON.stringify(menus));
+                                sessionStorage.setItem('name',name);
+                                window.location.href="index.html";//跳转
+                            });
+                        }
 					});
 					return false;
 				});
