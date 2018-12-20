@@ -68,8 +68,8 @@ layui.use(['element','layer'], function() {
 				type: 2,
 				shade: 0.2,
 				title: ['修改信息'],
-				area: ['800px','650px'],
-				content: 'editUser.html' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+				area: ['600px','450px'],
+				content: 'user/edit/editPwd.html' //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
 			});
 		})
 	}

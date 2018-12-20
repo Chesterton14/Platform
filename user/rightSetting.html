@@ -48,7 +48,7 @@
 
 				table.render({
 					elem: '#rightTable',
-					url: 'http://localhost:7000/api/v1/user/rules',
+					url: 'http://localhost:8081/rules',
 					cols: [
 						[	{field: 'id',title: '#',width: '5%'},
 						    {field: 'rulename',title: '权限名',width: '12.5%'},
@@ -91,7 +91,7 @@
                             layer.close(index);
                             //console.log(data);
                             $.ajax({
-                                url: 'http://localhost:7000/api/v1/user/user/'+data.id,
+                                url: 'http://localhost:8081/user/'+data.id,
                                 type: 'POST',
                                 data:{_method:"DELETE",ids:data.id},
                                 success:function(res){
@@ -112,14 +112,18 @@
                             shade: 0.2,
                             title: ['当前用户：' + data.username],
                             area: ['50%', '90%'],
-                            content: './edit/editRight.html'
+                            content: './edit/editRight.html',
+                            cancel:function (index,layero) {
+
+                                window.location.replace("rightSetting.html");
+                            }
                         });
                     }
                 });
 			});
 			$("#btn")[0].addEventListener('click',function(){
 				var rulename=$("#rulename").val();
-				var _url='http://localhost:7000/api/v1/user/rule/searchByName?name='+rulename;
+				var _url='http://localhost:8081/rule/searchByName?name='+rulename;
 				//console.log(_url);
 				layui.use('table',function(){
 					var table = layui.table;
