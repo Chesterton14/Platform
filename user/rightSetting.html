@@ -91,7 +91,7 @@
                             layer.close(index);
                             //console.log(data);
                             $.ajax({
-                                url: 'http://localhost:8081/user/'+data.id,
+                                url: 'http://localhost:8081/rule/'+data.id,
                                 type: 'POST',
                                 data:{_method:"DELETE",ids:data.id},
                                 success:function(res){
@@ -106,11 +106,12 @@
                     } else if (layEvent === 'edit') { //编辑
                         //do something
                         //console.log(data.id);
-                        sessionStorage.setItem('id', data.id);
+                        sessionStorage.setItem('rID', data.id);
+                        sessionStorage.setItem('rulename', data.rulename);
                         layer.open({
                             type: 2,
                             shade: 0.2,
-                            title: ['当前用户：' + data.username],
+                            title: ['当前权限：' + data.rulename],
                             area: ['50%', '90%'],
                             content: './edit/editRight.html',
                             cancel:function (index,layero) {

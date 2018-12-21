@@ -25,7 +25,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">用户权限</label>
             <div class="layui-input-inline">
-                <input type="text" name="username" id="username"  required lay-verify="required" placeholder="请输入权限名称"
+                <input type="text" name="rulename" id="rulename"  required lay-verify="required" placeholder="请输入权限名称"
                        class="layui-input">
             </div>
         </div>
@@ -64,7 +64,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">父级id</label>
             <div class="layui-input-inline">
-                <input type="text" name="pad" required lay-verify="required" placeholder="请输入父级id" class="layui-input">
+                <input type="text" name="pid" required lay-verify="required" placeholder="请输入父级id" class="layui-input">
             </div>
         </div>
 
@@ -81,7 +81,47 @@
 <script src="../../js/jquery-3.3.1.min.js"></script>
 <script src="../../layui/layui.js"></script>
 <script>
+    layui.use('form', function() {
+        var form = layui.form;
+        form.on('submit(formDemo)', function(data) {
+            console.log(data.field);
+            $.ajax({
+                url:"http://localhost:8081/rule",
+                type:"POST",
+                data:{
+                    rulename:data.field.rulename,
+                    description:data.field.description,
+                    type:data.field.type,
+                    permissions:data.field.permissions,
+                    url:data.field.url,
+                    ordernum:data.field.ordernum,
+                    pid:data.field.pid,
+                },
+                success:function(data){
+                    //console.log(data);
+                    if (res.status == "200") {
+                        layer.msg(res.msg, {
+                            icon: 6,
+                            time: 1500
+                        }, function() {
+                            window.history.back(-1);
+                            window.location.replace(document.referrer);
+                        });
+                    } else {
+                        layer.msg(res.msg, {
+                            icon: 5,
+                            time: 1500
+                        });
+                    }
+                },
+                error:function(err){
+                    console.log(err);
+                }
 
+            });
+            return false;
+        });
+    });
 </script>
 
 </body>

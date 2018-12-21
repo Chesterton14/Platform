@@ -19,52 +19,49 @@
 <body>
 <div class="formContainer">
     <div class="layui-form layui-form-pane" lay-filter="form">
-        <div class="layui-form-item">
-            <label class="layui-form-label" style="width: 100%;font-size: 20px;"><i class="layui-icon" style="font-size: 20px;">&#xe66f;</i>新增权限</label>
-        </div>
+
         <div class="layui-form-item">
             <label class="layui-form-label">用户权限</label>
             <div class="layui-input-inline">
-                <input type="text" name="username" id="username"  required lay-verify="required" placeholder="请输入权限名称"
-                       class="layui-input">
+                <input type="text" name="rulename" id="rulename"  required lay-verify="required" placeholder="请输入权限名称" class="layui-input">
             </div>
         </div>
 
 
         <div class="layui-form-item">
             <label class="layui-form-label">描述</label>
-            <div class="layui-input-inline">
-                <input type="text" name="description" required lay-verify="required" placeholder="请输入描述" class="layui-input">
+            <div class="layui-input-block">
+                <input type="text" name="description" id="description" required lay-verify="required" placeholder="请输入描述" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">类型</label>
             <div class="layui-input-inline">
-                <input type="text" name="type" required lay-verify="required" placeholder="请输入类型" class="layui-input">
+                <input type="text" name="type" id="type" required lay-verify="required" placeholder="请输入类型" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">权限标志</label>
-            <div class="layui-input-inline">
-                <input type="text" name="permissions" required lay-verify="required" placeholder="请输入权限标志" class="layui-input">
+            <div class="layui-input-block">
+                <input type="text" name="permissions" id="permissions" required lay-verify="required" placeholder="请输入权限标志" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">url</label>
-            <div class="layui-input-inline">
-                <input type="text" name="url" required lay-verify="required" placeholder="请输入url" class="layui-input">
+            <div class="layui-input-block">
+                <input type="text" name="url" id="url" required lay-verify="required" placeholder="请输入url" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">排序</label>
             <div class="layui-input-inline">
-                <input type="text" name="ordernum" required lay-verify="required" placeholder="请输入排序" class="layui-input">
+                <input type="text" name="ordernum" id="ordernum" required lay-verify="required" placeholder="请输入排序" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">父级id</label>
             <div class="layui-input-inline">
-                <input type="text" name="pad" required lay-verify="required" placeholder="请输入父级id" class="layui-input">
+                <input type="text" name="pid" id="pid" required lay-verify="required" placeholder="请输入父级id" class="layui-input">
             </div>
         </div>
 
@@ -73,7 +70,6 @@
             <div class="layui-input-block">
                 <button class="layui-btn" lay-submit lay-filter="formDemo"><i class="layui-icon">&#xe605;</i> 立即提交</button>
                 <button type="reset" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe669;</i> 重置</button>
-                <button class="layui-btn layui-btn-primary" onclick="window.history.back(-1)"><i class="layui-icon">&#xe65c;</i> 返回上一页面</button>
             </div>
         </div>
     </div>
@@ -81,8 +77,64 @@
 <script src="../../js/jquery-3.3.1.min.js"></script>
 <script src="../../layui/layui.js"></script>
 <script>
+    var rID = sessionStorage.getItem("rID");
+    var rulename = sessionStorage.getItem('rulename');
+    $('#rulename').val(rulename);
+    $.ajax({
+        type: 'GET',
+        url:'http://localhost:8081/rule/'+rID,
+        async:false,
+        success:function (res) {
+            console.log(res);
+            var data =res.data[0];
+            $('#description').val(res.data[0].description);
+            $('#type').val(res.data[0].type);
+            $('#permissions').val(res.data[0].permissions);
+            $('#url').val(res.data[0].url);
+            $('#ordernum').val(res.data[0].ordernum);
+            $('#pid').val(res.data[0].pid);
+        }
+    });
+    layui.use('form', function() {
+        var form = layui.form;
+        form.on('submit(formDemo)', function(data) {
+            //console.log(data.field);
+            $.ajax({
+                url:"http://localhost:8081/rule/"+rID,
+                type:"POST",
+                data:{
+                    _method:'put',
+                    rulename:data.field.rulename,
+                    description:data.field.description,
+                    type:data.field.type,
+                    permissions:data.field.permissions,
+                    url:data.field.url,
+                    ordernum:data.field.ordernum,
+                    pid:data.field.pid,
+                    id:rID
+                },
+                success:function(data){
+                    //console.log(data);
+                    if (data.status == "200") {
+                        layer.msg(data.msg, {
+                            icon: 6,
+                            time: 1500
+                        });
+                    } else {
+                        layer.msg(data.msg, {
+                            icon: 5,
+                            time: 1500
+                        });
+                    }
+                },
+                error:function(err){
+                    console.log(err);
+                }
 
+            });
+            return false;
+        });
+    });
 </script>
-
 </body>
 </html>
