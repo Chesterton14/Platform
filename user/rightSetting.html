@@ -48,7 +48,7 @@
 
 				table.render({
 					elem: '#rightTable',
-					url: 'http://localhost:8081/rules',
+					url: 'http://120.79.100.1:7000/api/v1/user/rules',
 					cols: [
 						[	{field: 'id',title: '#',width: '5%'},
 						    {field: 'rulename',title: '权限名',width: '12.5%'},
@@ -86,12 +86,13 @@
                     var tr = obj.tr; //获得当前行 tr 的DOM对象
 
                     if (layEvent === 'del') { //删除
-                        layer.confirm('确认删除用户：'+data.username+'?', {title:'提示'},function(index) {
+                        console.log(data);
+                        layer.confirm('确认删除权限：'+data.rulename+'?', {title:'提示'},function(index) {
                             obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
                             layer.close(index);
                             //console.log(data);
                             $.ajax({
-                                url: 'http://localhost:8081/rule/'+data.id,
+                                url: 'http://120.79.100.1:7000/api/v1/user/rule/'+data.id,
                                 type: 'POST',
                                 data:{_method:"DELETE",ids:data.id},
                                 success:function(res){
@@ -124,7 +125,7 @@
 			});
 			$("#btn")[0].addEventListener('click',function(){
 				var rulename=$("#rulename").val();
-				var _url='http://localhost:8081/rule/searchByName?name='+rulename;
+				var _url='http://120.79.100.1:7000/api/v1/user/rule/searchByName?name='+rulename;
 				//console.log(_url);
 				layui.use('table',function(){
 					var table = layui.table;

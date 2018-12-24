@@ -19,13 +19,7 @@
 	<body>
 		<div class="formContainer">
 			<div class="layui-form layui-form-pane" lay-filter="form">
-				<div class="layui-form-item">
-					<label class="layui-form-label">用户id</label>
-					<div class="layui-input-inline">
-						<input type="text" name="id" id="id"  required lay-verify="required" placeholder="请输入用户id"
-						class="layui-input">
-					</div>
-				</div>
+
 				<div class="layui-form-item">
 					<label class="layui-form-label">用户名称</label>
 					<div class="layui-input-inline">
@@ -104,9 +98,10 @@
 					</div>
 				</div>
 				<div class="layui-form-item" style="visibility: hidden">
-					<label class="layui-form-label">用户密码</label>
+					<label class="layui-form-label">用户id</label>
 					<div class="layui-input-inline">
-						<input type="password" name="pwd" id="password" required lay-verify="required" placeholder="请输入用户密码" class="layui-input">
+						<input type="text" name="id" id="id"  required lay-verify="required" placeholder="请输入用户id"
+							   class="layui-input">
 					</div>
 				</div>
 			</div>
@@ -119,9 +114,10 @@
             var deptid;
             $.ajax({
 				type: "get",
-				url:'http://localhost:8081/user/'+curId,
+				url:'http://120.79.100.1:7000/api/v1/user/user/'+curId,
 				async:false,
 				success:function (res) {
+                    console.log(res);
                     $('#id').val(res.data[0].id);
                     $('#username').val(res.data[0].username);
                     $('#password').val(res.data[0].pwd);
@@ -142,7 +138,7 @@
                             form.render('radio');
                         })
                     }else{
-                        $('#1').attr("checked");
+                        $('#1').attr("checked",'');
                         layui.use('form',function(){
                             var form = layui.form;
                             form.render('radio');
@@ -150,31 +146,37 @@
                     }
                     $.ajax({
 						type:'GET',
-						url:"http://localhost:8081/companys",
+						url:"http://120.79.100.1:7000/api/v1/user/companys",
 						async: false,
 						success:function (res) {
                             var data = res.data.list;
+                            var comId ;
                             //console.log(data);
                             for (var i = 0; i < data.length; i++) {
                                 //console.log(data[i].id,data[i].name);
 								if (comid ==data[i].id ){
+                                    comId=data[i].id;
                                     $("#coms").append("<option value='" + data[i].id + "' selected='selected'>" + data[i].name + "</option>");
+								}else{
+                                    $("#coms").append("<option value='" + data[i].id + "'>" + data[i].name + "</option>");
 								}
-                                $("#coms").append("<option value='" + data[i].id + "'>" + data[i].name + "</option>");
+
                             }
                             $.ajax({
 								type:"GET",
-								url:"http://localhost:8081/depts",
+								url:"http://120.79.100.1:7000/api/v1/user/comDept?comId="+comId,
 								async:false,
 								success:function (res) {
-                                    var data = res.data.list;
-                                    //console.log(data);
+                                    var data = res.data;
+                                    console.log(data);
                                     for (var i = 0; i < data.length; i++) {
                                         //console.log(data[i].id,data[i].name);
                                         if (deptid ==data[i].id ){
                                             $("#deps").append("<option value='" + data[i].id + "' selected='selected'>" + data[i].name + "</option>");
-                                        }
-                                        $("#deps").append("<option value='" + data[i].id + "'>" + data[i].name + "</option>");
+                                        }else{
+                                            $("#deps").append("<option value='" + data[i].id + "'>" + data[i].name + "</option>");
+										}
+
                                     }
                                 }
 							})
@@ -195,7 +197,7 @@
 						$("#deps option").remove();
 					}, 100);
 
-					$.get('http://localhost:8081/comDept?comId=' + res.value, function(res) {
+					$.get('http://120.79.100.1:7000/api/v1/user/comDept?comId=' + res.value, function(res) {
 						//console.log(res)
 						for (var i = 0; i < res.data.length; i++) {
 							//console.log(data[i].id,data[i].name);
@@ -208,14 +210,14 @@
 				form.on('submit(formDemo)', function(data) {
 					console.log(JSON.stringify(data.field));
 					$.ajax({
-						url:"http://localhost:8081/user/"+data.field.id,
+						url:"http://120.79.100.1:7000/api/v1/user/user/"+data.field.id,
 						type: "POST",
 						data: {
 							_method:'put',
 							username: data.field.username,
-							pwd: data.field.pwd,
+							//pwd: data.field.pwd,
 							avatarurl: "1",
-							status: "1",
+							status: "0",
 							name: data.field.name,
 							phone: data.field.phone,
 							age: data.field.age,

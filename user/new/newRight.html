@@ -64,10 +64,11 @@
         <div class="layui-form-item">
             <label class="layui-form-label">父级id</label>
             <div class="layui-input-inline">
-                <input type="text" name="pid" required lay-verify="required" placeholder="请输入父级id" class="layui-input">
+                <select id="pid" name="pid" lay-verify="required">
+                    <option value="">选择父级id</option>
+                </select>
             </div>
         </div>
-
 
         <div class="layui-form-item">
             <div class="layui-input-block">
@@ -81,12 +82,30 @@
 <script src="../../js/jquery-3.3.1.min.js"></script>
 <script src="../../layui/layui.js"></script>
 <script>
+
+    $.ajax({
+        type: 'GET',
+        url: 'http://120.79.100.1:7000/api/v1/user/rules',
+        async:false,
+        success:function (res) {
+            console.log(res);
+            var data = res.data.list;
+            var pidS =[];
+            for (var i = 0; i < data.length; i++) {
+                pidS.push(data[i].pid);
+            }
+            var oPidS = arrRemove(pidS);
+            for (var j = 0; j < oPidS.length; j++) {
+                $('#pid').append('<option value="'+oPidS[j]+'">'+oPidS[j]+'</option>');
+            }
+        }
+    });
     layui.use('form', function() {
         var form = layui.form;
         form.on('submit(formDemo)', function(data) {
             console.log(data.field);
             $.ajax({
-                url:"http://localhost:8081/rule",
+                url:"http://120.79.100.1:7000/api/v1/user/rule",
                 type:"POST",
                 data:{
                     rulename:data.field.rulename,
@@ -97,7 +116,7 @@
                     ordernum:data.field.ordernum,
                     pid:data.field.pid,
                 },
-                success:function(data){
+                success:function(res){
                     //console.log(data);
                     if (res.status == "200") {
                         layer.msg(res.msg, {
@@ -122,6 +141,18 @@
             return false;
         });
     });
+
+    //数组去重函数
+    function arrRemove(arr1) {
+        var newArr=[];
+        for (var i = 0; i < arr1.length; i++) {
+            if (newArr.indexOf(arr1[i]) == -1){
+                newArr.push(arr1[i]);
+            }
+        }
+        return newArr;
+    }
+
 </script>
 
 </body>

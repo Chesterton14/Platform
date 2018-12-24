@@ -19,16 +19,10 @@
 	<body>
 		<div class="formContainer">
 			<form class="layui-form layui-form-pane">
-				<div class="layui-form-item">
-					<label class="layui-form-label"><i class="layui-icon">&#xe66f;</i> 用户名称</label>
-					<div class="layui-input-block">
-						<input type="text" name="username" id="username" required lay-verify="required" placeholder="请输入用户名称" class="layui-input">
-					</div>
-				</div>
 				
 				<div class="layui-form-item" pane>
 					<label class="layui-form-label">选择角色</label>
-					<div class="layui-input-inline" id="roleIds" >
+					<div class="layui-input-inline" id="checkboxs" >
 
 					</div>
 				</div>
@@ -52,22 +46,9 @@
 		<script src="../../layui/layui.js"></script>
 		<script>
 			var uId = sessionStorage.getItem('uid');
-			var roleIds=[];
-            Array.prototype.indexOf = function(val) {
-                for (var i = 0; i < this.length; i++) {
-                    if (this[i] == val) return i;
-                }
-                return -1;
-            };
-            Array.prototype.remove = function(val) {
-                var index = this.indexOf(val);
-                if (index > -1) {
-                    this.splice(index, 1);
-                }
-            };
 			$.ajax({
 				type:'GET',
-				url:'http://localhost:8081/user/'+uId,
+				url:'http://120.79.100.1:7000/api/v1/user/user/'+uId,
 				async:false,
 				success:function (res) {
                     $('#username').val(res.data[0].username);
@@ -75,30 +56,35 @@
 
                     $.ajax({
 						type: 'GET',
-						url: "http://localhost:8081/roles",
+						url: "http://120.79.100.1:7000/api/v1/user/role/getAll",
 						async: false,
 						success:function (res) {
-                            var data = res.data.list;
+                            var data = res.data;
                             //console.log(data);
                             for (var i = 0; i < data.length; i++) {
                                 //console.log(data[i].id,data[i].rolename);
-                                $("#roleIds").append('<input type="checkbox" name="roleId"  lay-filter="checkedBox" value="'+ data[i].id +'" title="'+ data[i].description +'">');
-
+                                $("#checkboxs").append('<input type="checkbox" name="roleId"  lay-filter="checkedBox" value="'+ data[i].id +'" title="'+ data[i].description +'">');
                             }
-                            layui.use('form',function(){
-                                var form = layui.form;
-                                form.render('checkbox');
-                                form.on('checkbox(checkedBox)', function(data){
-                                    console.log(data.value); //复选框value值，也可以通过data.elem.value得到
-									if (data.elem.checked == true){
-                                        roleIds.push(data.value);
-									}
-                                    if (data.elem.checked == false){
-                                        roleIds.remove(data.value);
+
+                                $.ajax({
+                                    type:'GET',
+                                    url:"http://120.79.100.1:7000/api/v1/user/userRole?userId="+uId,
+                                    async:false,
+                                    success:function (res) {
+                                        //console.log(res);
+                                        var data = res.data;
+                                        var droleIds=document.getElementById("checkboxs").getElementsByTagName("input");
+                                        //console.log(roleIds);
+                                        for (var i = 0; i < data.length; i++) {
+                                            for (var j = 0; j < droleIds.length; j++) {
+                                                if (data[i].id == droleIds[j].attributes[3].value ){
+                                                    droleIds[j].checked = true;
+                                                    //console.log(roleIds[j]);
+                                                }
+                                            }
+                                        }
                                     }
                                 });
-                            });
-
                         }
 					})
                 }
@@ -109,26 +95,37 @@
 				var layer = layui.layer;
 				form.on('submit(formDemo)', function(data) {
 					console.log(JSON.stringify(data.field));
-                    console.log(roleIds);
-                    $.post('http://localhost:8081/userRole',{
-                        userId:data.field.userId,
-                        roleIds:roleIds.toString()
-                    },function(data){
-                        //console.log(data);
-                        if (data.status == "200") {
-                            layer.msg(data.msg, {
-                                icon: 6,
-                                time: 1500
-                            });
-                        } else {
-                            layer.msg(data.msg, {
-                                icon: 5,
-                                time: 1500
-                            });
+					var roleIdArr=[];
+                    var inputs = ($("#checkboxs input"));
+                    for (var i = 0; i < inputs.length; i++) {
+                        if (inputs[i].checked == true) {
+                            roleIdArr.push(inputs[i].value);
                         }
-                    });
-                    roleIds=[];
-
+                    }
+                    console.log(roleIdArr.toString());
+                    $.ajax({
+						type:'POST',
+						url:'http://120.79.100.1:7000/api/v1/user/userRole',
+						data:{
+						    _method:'put',
+                            userId:data.field.userId,
+                            roleIds:roleIdArr.toString()
+						},
+						success:function (data) {
+                            if (data.status == "200") {
+                                layer.msg(data.msg, {
+                                    icon: 6,
+                                    time: 1500
+                                });
+                            } else {
+                                layer.msg(data.msg, {
+                                    icon: 5,
+                                    time: 1500
+                                });
+                            }
+                        }
+					});
+                    roleIdArr=[];
                     return false;
 				});
 			});
