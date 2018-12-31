@@ -3,6 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="4e2eef85-13e4-411a-b310-3b02eae0be16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excelExports.html" beforeDir="false" afterPath="$PROJECT_DIR$/excelExports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/layui.mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui/css/layui.mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/modules/code.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui/css/modules/code.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/modules/laydate/default/laydate.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/modules/layer/default/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/layui/font/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/element.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/flow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/laydate.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/laydate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/layedit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/layer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/laypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/laypage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/laytpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/mobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/rate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/lay/modules/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/layui.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/layui.all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/layui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/characterSetting.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/characterSetting.html" afterDir="false" />
@@ -11,6 +40,7 @@
       <change beforePath="$PROJECT_DIR$/user/edit/editChar.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit/editChar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/edit/editCom.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit/editCom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/edit/editDept.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit/editDept.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/edit/editPwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit/editPwd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/edit/editRight.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit/editRight.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/edit/editUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit/editUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/give/charGiving.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/give/charGiving.html" afterDir="false" />
@@ -32,95 +62,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1861978005">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="11" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="11" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="14" />
-          <entry key="html" value="3863" />
-          <entry key="js" value="50" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="14" />
-          <entry key="HTML" value="3863" />
-          <entry key="JavaScript" value="50" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="1" />
-          <entry key="html" value="65" />
-          <entry key="js" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="65" />
-          <entry key="JavaScript" value="5" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/userSetting.html">
+        <entry file="file://$PROJECT_DIR$/map/bds.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2926">
-              <caret line="133" column="61" selection-start-line="133" selection-start-column="61" selection-end-line="133" selection-end-column="61" />
+            <state relative-caret-position="1288">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/characterSetting.html">
+        <entry file="file://$PROJECT_DIR$/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3256">
-              <caret line="148" column="46" selection-start-line="148" selection-start-column="46" selection-end-line="148" selection-end-column="46" />
+            <state relative-caret-position="828">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/give/charGiving.html">
+        <entry file="file://$PROJECT_DIR$/logger.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/give/rightGiving.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1298">
-              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+            <state relative-caret-position="2300">
+              <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login.html">
+        <entry file="file://$PROJECT_DIR$/loggerDetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+            <state relative-caret-position="644">
+              <caret line="103" column="67" selection-start-line="103" selection-start-column="67" selection-end-line="103" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/new/newCharacter.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1380">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -128,35 +121,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/new/newUser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
+            <state relative-caret-position="2507">
+              <caret line="109" column="51" selection-end-line="224" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/edit/editChar.html">
+        <entry file="file://$PROJECT_DIR$/user/userSetting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1093">
-              <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/new/newDepartment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/rightSetting.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1958">
-              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+            <state relative-caret-position="2093">
+              <caret line="91" column="24" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -180,6 +155,9 @@
       <find>120.79.100.1:7000/api/v1/user</find>
       <find>localhost:8081/</find>
       <find>120.79.100.1:7000/api/v1/user/</find>
+      <find>localhost:7000/</find>
+      <find>val</find>
+      <find>layui-btn layui-btn-disabled</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -190,6 +168,8 @@
       <replace>http://120.79.100.1:7000/api/v1/user/</replace>
       <replace>120.79.100.1:7000/api/v1/user/</replace>
       <replace>localhost:8081/</replace>
+      <replace>text</replace>
+      <replace>layui-btn layui-btn-primary</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -198,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/user/new/newCompany.html" />
         <option value="$PROJECT_DIR$/user/edit/editCom.html" />
         <option value="$PROJECT_DIR$/user/new/newCharacter.html" />
@@ -214,27 +193,31 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/user/departmentSetting.html" />
         <option value="$PROJECT_DIR$/user/new/newRight.html" />
-        <option value="$PROJECT_DIR$/user/characterSetting.html" />
         <option value="$PROJECT_DIR$/user/edit/editUser.html" />
         <option value="$PROJECT_DIR$/user/rightSetting.html" />
         <option value="$PROJECT_DIR$/user/give/rightGiving.html" />
         <option value="$PROJECT_DIR$/user/new/newUser.html" />
         <option value="$PROJECT_DIR$/user/give/charGiving.html" />
         <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/user/characterSetting.html" />
+        <option value="$PROJECT_DIR$/map/bds.html" />
+        <option value="$PROJECT_DIR$/map/trackback.html" />
+        <option value="$PROJECT_DIR$/js/test.json" />
+        <option value="$PROJECT_DIR$/js/trackback.js" />
+        <option value="$PROJECT_DIR$/js/singlepoint.js" />
+        <option value="$PROJECT_DIR$/map/test.json" />
+        <option value="$PROJECT_DIR$/map/single.json" />
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/logger.html" />
+        <option value="$PROJECT_DIR$/loggerDetail.html" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1636" />
-    <option name="y" value="165" />
+    <option name="x" value="1519" />
+    <option name="y" value="138" />
     <option name="width" value="1616" />
-    <option name="height" value="886" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -242,7 +225,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,24 +246,13 @@
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="platform" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="edit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="give" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="new" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,7 +262,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\320\Desktop\platform\map" />
+      <recent name="C:\Users\320\Desktop\platform\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\320\Desktop\platform\map" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -336,11 +316,22 @@
       <workItem from="1545619874596" duration="758000" />
       <workItem from="1545622318845" duration="7000" />
       <workItem from="1545642346807" duration="1862000" />
+      <workItem from="1545704620184" duration="4000" />
+      <workItem from="1545704708776" duration="497000" />
+      <workItem from="1545705417584" duration="7000" />
+      <workItem from="1545816099296" duration="2375000" />
+      <workItem from="1545818585546" duration="790000" />
+      <workItem from="1545871147433" duration="16000" />
+      <workItem from="1546049040078" duration="2121000" />
+      <workItem from="1546055704357" duration="2202000" />
+      <workItem from="1546073613601" duration="2863000" />
+      <workItem from="1546232610403" duration="83000" />
+      <workItem from="1546232840039" duration="116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78354000" />
+    <option name="totallyTimeSpent" value="89428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,7 +343,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="1592" y="-109" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14765526" />
@@ -368,7 +359,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -377,19 +368,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/json/datas.json" />
     <entry file="file://$PROJECT_DIR$/json/main.json" />
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -460,20 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/new/newCharacter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/edit/editUser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -481,66 +448,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/userSetting.html">
+    <entry file="file://$PROJECT_DIR$/user/give/charGiving.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="133" column="61" selection-start-line="133" selection-start-column="61" selection-end-line="133" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/characterSetting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3256">
-          <caret line="148" column="46" selection-start-line="148" selection-start-column="46" selection-end-line="148" selection-end-column="46" />
+        <state relative-caret-position="700">
+          <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/give/rightGiving.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state relative-caret-position="1160">
+          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/edit/editChar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/new/newDepartment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
+        <state relative-caret-position="740">
           <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/rightSetting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1958">
+        <state relative-caret-position="1780">
           <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/new/newUser.html">
+    <entry file="file://$PROJECT_DIR$/map/checkbox.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
+        <state relative-caret-position="220">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/edit/editChar.html">
+    <entry file="file://$PROJECT_DIR$/map/checkbox.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/singlepoint.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
-          <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
+        <state relative-caret-position="100">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/give/charGiving.html">
+    <entry file="file://$PROJECT_DIR$/map/single.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+        <state relative-caret-position="20">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/map.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/points.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/trackback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/trackback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        <state relative-caret-position="820">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/characterSetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2120">
+          <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/bds.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/new/newCharacter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/new/newUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2507">
+          <caret line="109" column="51" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/userSetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2093">
+          <caret line="91" column="24" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="67" column="32" lean-forward="true" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loggerDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="103" column="67" selection-start-line="103" selection-start-column="67" selection-end-line="103" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

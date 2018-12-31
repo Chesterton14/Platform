@@ -33,30 +33,31 @@
 						<button type="reset" id="btnReset" class="layui-btn layui-btn-primary"><i class="layui-icon">&#xe669;</i> 重置</button>
 					</div>
 				</div>
-				<div class="layui-form-item" style="visibility: hidden;">
+				<!--<div class="layui-form-item" style="visibility: hidden;">
 					<label class="layui-form-label"><i class="layui-icon">&#xe66f;</i> 用户id</label>
 					<div class="layui-input-block">
 						<input type="text" name="userId" id="userId" required lay-verify="required" placeholder="请输入用户名称" autocomplete="off"
 						class="layui-input">
 					</div>
-				</div>
+				</div>-->
 			</form>
 		</div>
 		<script src="../../js/jquery-3.3.1.min.js"></script>
 		<script src="../../layui/layui.js"></script>
 		<script>
 			var uId = sessionStorage.getItem('uid');
+			var userId;
 			$.ajax({
 				type:'GET',
-				url:'http://120.79.100.1:7000/api/v1/user/user/'+uId,
+				url:'http://localhost:7000/api/v1/user/user/'+uId,
 				async:false,
 				success:function (res) {
                     $('#username').val(res.data[0].username);
                     $('#userId').val(res.data[0].id);
-
+					userId=res.data[0].id;
                     $.ajax({
 						type: 'GET',
-						url: "http://120.79.100.1:7000/api/v1/user/role/getAll",
+						url: "http://localhost:7000/api/v1/user/role/getAll",
 						async: false,
 						success:function (res) {
                             var data = res.data;
@@ -68,7 +69,7 @@
 
                                 $.ajax({
                                     type:'GET',
-                                    url:"http://120.79.100.1:7000/api/v1/user/userRole?userId="+uId,
+                                    url:"http://localhost:7000/api/v1/user/userRole?userId="+uId,
                                     async:false,
                                     success:function (res) {
                                         //console.log(res);
@@ -105,10 +106,10 @@
                     console.log(roleIdArr.toString());
                     $.ajax({
 						type:'POST',
-						url:'http://120.79.100.1:7000/api/v1/user/userRole',
+						url:'http://localhost:7000/api/v1/user/userRole',
 						data:{
 						    _method:'put',
-                            userId:data.field.userId,
+                            userId:userId,
                             roleIds:roleIdArr.toString()
 						},
 						success:function (data) {
@@ -132,7 +133,7 @@
             document.getElementById('btnReset').addEventListener('click',function (ev) {
                 $.ajax({
                     type:'GET',
-                    url:'http://120.79.100.1:7000/api/v1/user/user/'+uId,
+                    url:'http://localhost:7000/api/v1/user/user/'+uId,
                     success:function (res) {
                         console.log(res);
                         $('#username').val(res.data[0].username);

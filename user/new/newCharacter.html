@@ -28,10 +28,6 @@
 					<input type="text" name="rolename" required lay-verify="required" placeholder="请输入角色名称" autocomplete="off" class="layui-input">
 				</div>
 			</div>
-
-
-		
-
 			<div class="layui-form-item layui-form-text">
 				<label class="layui-form-label"><i class="layui-icon">&#xe60a;</i> 角色描述</label>
 				<div class="layui-input-block">
@@ -54,7 +50,7 @@
 				var form = layui.form;
 				form.on('submit(formDemo)', function(data) {
 					console.log(JSON.stringify(data.field));
-					$.post('http://120.79.100.1:7000/api/v1/user/role',{
+					$.post('http://localhost:7000/api/v1/user/role',{
 						rolename:data.field.rolename,
 						description:data.field.description
 					},function(res){
